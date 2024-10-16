@@ -298,9 +298,13 @@ a h1:hover {
         /* Less padding for smaller devices */
     }
 
+
+
     /* Header adjustments */
     .header-title h1 {
-        font-size: 1.5rem;
+        display: flex;
+        justify-items: center;
+        font-size: 3rem;
         /* Smaller font size for mobile */
     }
 
@@ -318,12 +322,16 @@ a h1:hover {
         padding: 20px;
     }
 
-    /* Make images fully responsive */
     .cropped-article-image {
-        width: 100%;
-        /* Full width */
-        height: auto;
-        /* Maintain aspect ratio */
+        display: flex;
+        width: 400px;
+        /* Set the desired width */
+        height: 250px;
+        /* Set the desired height */
+        object-fit: cover;
+        /* Cover the entire area and crop */
+        justify-self: flex-start;
+        /* Center the image */
     }
 
     /* Sidebar adjustments for mobile */
@@ -350,18 +358,32 @@ a h1:hover {
             /* Adjust padding for smaller screens */
         }
 
+        /* Header adjustments */
+        .header-title h1 {
+            display: flex;
+            justify-items: center;
+            font-size: 3rem;
+            /* Smaller font size for mobile */
+        }
+
+
         /* Adjust main article padding */
         .main-article {
             padding: 20px;
             /* Smaller padding for tablet */
         }
 
-        /* Resize images */
+
         .cropped-article-image {
-            width: 100%;
-            /* Image takes up full width of its container */
-            height: auto;
-            /* Maintain aspect ratio */
+            display: flex;
+            width: 400px;
+            /* Set the desired width */
+            height: 250px;
+            /* Set the desired height */
+            object-fit: cover;
+            /* Cover the entire area and crop */
+            justify-self: flex-start;
+            /* Center the image */
         }
 
         /* Sidebar adjustments */
