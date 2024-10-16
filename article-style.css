@@ -1,0 +1,252 @@
+/* ---------------------------------HEADER GENERAL------------------------------------------------*/
+@font-face {
+    font-family: chomsky;
+    src: url('fonts/Chomsky.otf');
+    font-weight: bold;
+}
+
+.grid-header {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    /* Adjust columns for logo, title, and nav */
+    align-items: center;
+    padding: 10px;
+    text-align: center;
+
+}
+
+.header-lines {
+    text-align: center;
+    position: relative;
+
+}
+
+.divider-line {
+    display: flex;
+
+}
+
+/* Center the title between logo and nav */
+.header-title {
+    text-align: center;
+    justify-self: center;
+    /* Ensures the title is centered in the grid */
+    grid-column: 1/-1;
+    /* Make the title span all columns*/
+
+}
+
+/* Use the Newsreader font for the header title */
+.header-title h1 {
+    font-family: 'Chomsky';
+    font-size: 3rem;
+    margin: 0;
+    /* Font smoothing */
+
+}
+
+.current-date {
+    text-align: center;
+    /* Center the date text */
+    font-size: 1.2rem;
+    /* Change font size as needed */
+    margin-top: 10px;
+    /* Space above the date */
+}
+
+.divider-line {
+    width: auto%;
+    height: 2px;
+    background-color: black;
+    margin: 10px 0;
+
+}
+
+/* ---------------------------------NAV BAR------------------------------------------------*/
+.nav-links {
+
+    text-align: center;
+    grid-column: 1/-1;
+}
+
+.nav-links ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    /* Space between links */
+}
+
+.nav-links ul li {
+    margin: 0;
+}
+
+.nav-links a {
+    color: black;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+    /* Underline on hover */
+}
+
+/* ---------------------------------MAIN CONTENT GRID------------------------------------------------*/
+.content-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    /*2 columns for main article and 1 for sidebar. */
+    gap: 20px;
+    padding: 20px;
+}
+
+/* ---------------------------------CONTENT------------------------------------------------*/
+.main-article {
+    display: flex;
+    flex-direction: column;
+    background-color: #f7f7f7;
+    padding: 30px;
+}
+
+.article-topline {
+    width: auto%;
+    height: 2px;
+    background-color: #7a7979;
+    margin: 10px 0;
+
+}
+
+.article-tags-container {
+    display: flex;
+    justify-content: space-between;
+    color: #7a7979;
+}
+
+.article-tags {
+    font-family: Newsreader;
+}
+
+.article-bottomline {
+    width: auto;
+    height: 2px;
+    background-color: #7a7979;
+    margin: 10px 0;
+
+}
+
+/* Article image styling */
+.article-image {
+    place-self: center;
+    width: 80%;
+    /* Full width */
+    height: auto;
+    /* Maintain aspect ratio */
+}
+
+/* Article text styling*/
+h1,
+h2 {
+    font-family: 'Newsreader', serif;
+    /*Use Newsreader font for all Hs*/
+}
+
+.h1 {
+    font-size: 50px;
+}
+
+.h2 {
+    font-size: 34px;
+}
+
+
+
+.quote {
+    font-family: serif;
+    font-style: italic;
+    margin: 20px 0;
+    padding-left: 10px;
+    border-left: 3px solid #e1e5eb;
+    /* Nice quote styling */
+}
+
+.body-text {
+    font-family: sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    text-align: justify;
+    margin-top: 10px;
+    /* Space above the body text */
+
+}
+
+.divider-ad-skinny {
+    grid-column: 1/2;
+    width: auto;
+}
+
+/* ---------------------------------SIDEBAR-------------------------------------------*/
+.sidebar {
+    background-color: #f7f7f7;
+    /* Color for the sidebar */
+    padding: 20px;
+    position: sticky;
+    /* Fix position on the page */
+    align-self: flex-start;
+    top: 120px;
+    /* Adjust based on header height */
+    left: 120px;
+}
+
+.sidebar h2 {
+    font-family: 'Newsreader', serif;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+    /* Space between items */
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: black;
+    /* Change color for sidebar links */
+}
+
+.related-story-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.related-story-item img {
+    display: flex;
+    width: 70px;
+    margin-right: 10px;
+    height: 70px;
+    /* Set the desired height */
+    object-fit: cover;
+    /* Cover the entire area and crop */
+    justify-self: flex-start;
+    /* Center the image */
+}
+
+
+.related-story-item li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar-ads img {
+    display: block;
+    width: 70%;
+    margin: 20px auto;
+}
