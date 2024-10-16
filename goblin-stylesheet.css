@@ -5,6 +5,7 @@
 }
 
 body {
+    max-width: 1200px;
     margin: 0;
     padding: 0;
     overflow-x: hidden;
@@ -68,7 +69,7 @@ body {
 }
 
 .divider-line {
-    width: auto%;
+    width: auto;
     height: 2px;
     background-color: black;
     margin: 10px 0;
@@ -284,3 +285,89 @@ a h1:hover {
 
 
 /* ---------------------------------RESPONSIVE DESIGN-------------------------------------------*/
+
+/* ---------------------------------MOBILE STYLES (less than 768px)--------------------------------- */
+@media (max-width: 767px) {
+    /*MOBILE STUFF*/
+
+    /* Stack everything vertically */
+    .content-grid {
+        grid-template-columns: 1fr;
+        /* Full width for main content */
+        padding: 5px;
+        /* Less padding for smaller devices */
+    }
+
+    /* Header adjustments */
+    .header-title h1 {
+        font-size: 1.5rem;
+        /* Smaller font size for mobile */
+    }
+
+    /* Smaller padding for mobile */
+    .main-article {
+        padding: 10px;
+        text-wrap: wrap;
+    }
+
+    .quote {
+        padding: 20px;
+    }
+
+    h1 {
+        padding: 20px;
+    }
+
+    /* Make images fully responsive */
+    .cropped-article-image {
+        width: 100%;
+        /* Full width */
+        height: auto;
+        /* Maintain aspect ratio */
+    }
+
+    /* Sidebar adjustments for mobile */
+    .sidebar {
+        padding: 10px;
+        margin-top: 10px;
+    }
+
+    /*NAV LINK STACKED VERTICALLY FOR MOBILE, OM MAN VILL*/
+    /*.nav-links ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+*/
+    /* ---------------------------------TABLET STYLES (768px - 1024px)--------------------------------- */
+    @media (max-width: 1024px) {
+
+        /* Stack content vertically */
+        .content-grid {
+            grid-template-columns: 1fr;
+            /* Single column layout */
+            padding: 10px;
+            /* Adjust padding for smaller screens */
+        }
+
+        /* Adjust main article padding */
+        .main-article {
+            padding: 20px;
+            /* Smaller padding for tablet */
+        }
+
+        /* Resize images */
+        .cropped-article-image {
+            width: 100%;
+            /* Image takes up full width of its container */
+            height: auto;
+            /* Maintain aspect ratio */
+        }
+
+        /* Sidebar adjustments */
+        .sidebar {
+            padding: 15px;
+            margin-top: 20px;
+            /* Space it out below the main content */
+        }
+    }
