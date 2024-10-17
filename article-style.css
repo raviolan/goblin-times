@@ -39,7 +39,8 @@
 }
 
 /* Use the Newsreader font for the header title */
-.header-title h1 {
+.header-title h1,
+a {
     font-family: 'Chomsky';
     font-size: 3rem;
     margin: 0;
@@ -48,6 +49,8 @@
     color: black;
 
 }
+
+
 
 .current-date {
     text-align: center;
