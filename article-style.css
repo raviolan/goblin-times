@@ -232,7 +232,9 @@ h2 {
     /* Space between items */
 }
 
+
 .sidebar a {
+    font-family: 'Newsreader', serif;
     text-decoration: none;
     color: black;
     /* Change color for sidebar links */
@@ -270,7 +272,8 @@ h2 {
 }
 
 
-* ---------------------------------MOBILE STYLES (less than 768px)--------------------------------- */ @media (max-width: 767px) {
+/* ---------------------------------MOBILE STYLES (less than 768px)--------------------------------- */
+@media (max-width: 767px) {
     /*MOBILE STUFF*/
 
     * {

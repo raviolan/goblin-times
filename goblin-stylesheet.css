@@ -54,13 +54,13 @@ body {
 .header-title h1,
 a {
     font-family: 'Chomsky';
-
     margin: 0;
     /* Font smoothing */
     text-decoration: none;
     color: black;
 
 }
+
 
 
 .current-date {
@@ -245,7 +245,8 @@ a h1:hover {
     left: 120px;
 }
 
-.sidebar h2 {
+.sidebar h1,
+h2 {
     font-family: 'Newsreader', serif;
 }
 
@@ -260,6 +261,7 @@ a h1:hover {
 }
 
 .sidebar a {
+    font-family: 'Newsreader', serif;
     text-decoration: none;
     color: black;
     /* Change color for sidebar links */
