@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mordförsök på Goblindrottning</title>
+    <link rel="stylesheet" href="article-style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Madimi+One&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <!-----------------header section----------------->
+    <header class="grid-header">
+        <div class="divider-line"></div>
+        <div class="header-title">
+            <a href="goblin-index.html">
+                <h1>The Goblin Times</h1>
+            </a>
+        </div>
+        <nav class="grid-item nav-links">
+            <ul>
+                <li><a href="goblin-index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="divider-line"></div>
+    </header>
+    <div class="divider-line"></div>
+    <!-- Date Field -->
+    <div id="current-date" class="current-date"></div>
+    <div class="divider-line"></div>
+
+
+    <!----------------- main content section----------------->
+    <main class="content-grid">
+        <!----------------- article section----------------->
+        <section class="main-article">
+            <div class="article-topline"></div>
+            <div class="article-tags-container">
+                <div class="article-tags tag-1">Opinion</div>
+                <div class="article-tags tag-1">Samhälle</div>
+                <div class="article-tags tag-published">Publicerad: Datum</div>
+            </div>
+            <div class="article-bottomline"></div>
+            <h1>Förbjud frisovare</h1>
+            <img src="images/forbjud-frisovare.png" alt="" class="article-image">
+
+            <div class="body-text">
+                <p>
+                    <strong>SAMHÄLLE. </strong> Frisovare, dessa äventyrare som oansvarigt väljer att sova
+                    precis varhelst
+                    de behagar, har blivit ett växande problem i våra katakomber. Deras slapphänta beteende
+                    stör inte bara det naturliga flödet i områden där andra varelser, som oss tappra goblins,
+                    har sitt hem och utövar sina ritualer. Det är hög tid att vi förbjuder frisovare
+                    för att skydda dessa områdens rättmätiga invånare och upprätthålla ordning. <br><br>
+                    För goblinsamhällen utgör frisovarna ett hinder för deras traditionella strider
+                    och kampsessioner. Många goblins finner sin identitet och ära på slagfältet, och dessa till
+                    synes harmlösa, sovande äventyrare hindrar dem från att utföra dessa viktiga ritualer.
+                    Att ständigt behöva väja för sovande kroppar, som ofta ockuperar strategiska områden
+                    och träningsmarker, underminerar deras kultur och försvagar gemenskapen. Dessutom
+                    sprider sig allt för ofta en stank av avföring runt de platser där dessa frisovare behagar
+                    att slå läger. <br><br>
+                    Genom att förbjuda frisovning kan vi respektera goblins utrymme och tillåta dem
+                    att behålla sina kulturutövningar ostört. Ett sådant förbud skulle även ge frisovarna en
+                    möjlighet att planera sina övernattningar på lämpliga och avsedda platser, utan att vara
+                    i vägen för andra varelser. <br><br>
+                    Grymtmyndigheten borde på allvar överväga att se över ett totalförbud mot att
+                    släpp in utomstående äventyrare i våra katakomber till dess de lyckas få bukt på detta
+                    allvarliga problem. Ingen goblin förtjänar att bli borthunsad från sin egen katakomb -
+                    speciellt inte av varelser som inte ens hör hemma här.
+                </p>
+            </div>
+        </section>
+
+        <!-----------------sidebar section----------------->
+        <aside class="sidebar">
+            <section class="related-news">
+                <h2>Latest News</h2>
+                <ul>
+
+                    <div class="related-story-item">
+                        <img src="images/temple-donation.png" alt="Soldyrkare hårdast drabbade">
+                        <li><a href="allt-farre-donerar.html">Allt färre donerar till tempel</a></li>
+                    </div>
+                    <!-- Divider Line -->
+                    <div class="divider-line"></div>
+                    <div class="related-story-item">
+                        <img src="images/undermountain-beer.png" alt="">
+                        <li><a href="olstold-i-lager.html">Ölstöld i lager gäckar myndigheter</a></li>
+                    </div>
+                    <!-- Divider Line -->
+                    <div class="divider-line"></div>
+                    <div class="related-story-item">
+                        <img src="images/stadkuber-varslas.png" alt="">
+                        <li><a href="stadkuber-varslas.html">Minskad skurbudget - 3 städkuber varslas</a></li>
+                    </div>
+                    <!-- Divider Line -->
+                    <div class="divider-line"></div>
+                </ul>
+                <div class="sidebar-ads">
+                    <img src="images/laderskor-ad.png" alt="köp nya skor">
+                </div>
+            </section>
+        </aside>
+    </main>
+    <!-----------------script section----------------->
+    <script>
+        // Function to get today's date
+        function updateDate() {
+            const today = new Date(); // Get current date
+            const options = { year: 'numeric', month: 'long', day: 'numeric' }; // Format options
+            const dateString = today.toLocaleDateString('en-US', options); // Format date to a string
+            document.getElementById('current-date').textContent = dateString; // Update the content of the date div
+        }
+
+        // Call the function to set the date on page load
+        updateDate();
+
+
+    </script>
+
+</body>
+
+</html>
