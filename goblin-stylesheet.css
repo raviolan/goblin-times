@@ -232,6 +232,13 @@ a h1:hover {
     width: auto;
 }
 
+.divider-ad-broad img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .las-ocksa h2,
 a {
     font-family: 'Newsreader', serif;
