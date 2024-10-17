@@ -10,6 +10,7 @@ body {
     padding: 0;
     overflow-x: hidden;
     /* Prevent horizontal scrolling */
+    text-align: left;
 }
 
 /* ---------------------------------HEADER GENERAL------------------------------------------------*/
