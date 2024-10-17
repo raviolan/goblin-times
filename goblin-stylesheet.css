@@ -240,7 +240,8 @@ a h1:hover {
     align-items: center;
 }
 
-.las-ocksa h2,
+.las-ocksa h1,
+h2,
 a {
     font-family: 'Newsreader', serif;
 
@@ -427,9 +428,13 @@ a {
         padding: 20px;
     }
 
-    h1 {
+    h1,
+    h2 {
         padding: 20px;
+        font-family: 'Newsreader', serif;
     }
+
+
 
     .article-image,
     .cropped-article-image {
