@@ -313,6 +313,7 @@ h2 {
     display: block;
     width: 70%;
     margin: 20px auto;
+    image-orientation: from-image;
 }
 
 .footer {
