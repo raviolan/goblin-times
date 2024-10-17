@@ -446,6 +446,13 @@ a {
         margin-top: 10px;
     }
 
+    .sidebar-ads img {
+        display: block;
+        width: 70%;
+        margin: 20px auto;
+        image-orientation: from-image;
+    }
+
     /*NAV LINK STACKED VERTICALLY FOR MOBILE, OM MAN VILL*/
     /*.nav-links ul {
         flex-direction: column;
