@@ -130,7 +130,7 @@ a {
 }
 
 .article-topline {
-    width: auto%;
+    width: auto;
     height: 2px;
     background-color: #7a7979;
     margin: 10px 0;
@@ -217,7 +217,6 @@ a {
     /* Cover the entire area and crop */
     justify-self: flex-start;
     /* Center the image */
-}
 }
 
 /* ---------------------------------SIDEBAR-------------------------------------------*/
