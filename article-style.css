@@ -1,3 +1,17 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    max-width: 1200px;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    /* Prevent horizontal scrolling */
+}
+
 /* ---------------------------------HEADER GENERAL------------------------------------------------*/
 @font-face {
     font-family: chomsky;
@@ -34,22 +48,19 @@
     grid-column: 1/-1;
     /* Make the title span all columns*/
 
-
-
 }
 
 /* Use the Newsreader font for the header title */
 .header-title h1,
 a {
     font-family: 'Chomsky';
-    font-size: 3rem;
+
     margin: 0;
     /* Font smoothing */
     text-decoration: none;
     color: black;
 
 }
-
 
 
 .current-date {
@@ -62,7 +73,7 @@ a {
 }
 
 .divider-line {
-    width: auto%;
+    width: auto;
     height: 2px;
     background-color: black;
     margin: 10px 0;
@@ -259,74 +270,138 @@ h2 {
 }
 
 
-/*----------------------------CHANGES FOR MOBILE----------------------*/
-/* Sidebar adjustments for mobile */
-* {
-    max-width: 100vw;
-    overflow-x: hidden;
+* ---------------------------------MOBILE STYLES (less than 768px)--------------------------------- */ @media (max-width: 767px) {
+    /*MOBILE STUFF*/
+
+    * {
+        max-width: 100vw;
+        overflow-x: hidden;
+    }
+
+    /* Stack everything vertically */
+    .content-grid {
+        grid-template-columns: 1fr;
+        /* Full width for main content */
+        padding: 5px;
+        /* Less padding for smaller devices */
+        overflow: hidden;
+        /* Prevent overflow causing horizontal scrolling */
+    }
+
+    .grid-header {
+        display: grid;
+        grid-template-columns: auto 1fr auto;
+        align-items: center;
+        padding: 15px;
+        /* Ensure there’s enough space for the larger header */
+
+        text-align: center;
+    }
+
+    /* Header title */
+    .header-title h1 {
+        font-size: 4rem;
+        /* Increase the font size */
+        text-align: center;
+        justify-self: center;
+    }
+
+    /* Navbar (navigation links) scaling */
+    .nav-links ul {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        /* More space between links */
+    }
+
+    .nav-links a {
+        font-size: 1.5rem;
+        /* Increase the size of the nav links */
+        color: black;
+        text-decoration: none;
+    }
+
+    /* Smaller padding for mobile */
+    .main-article {
+        padding: 10px;
+        width: 100%;
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+
+    .quote {
+        padding: 20px;
+    }
+
+    h1 {
+        padding: 20px;
+    }
+
+    .article-image,
+    .cropped-article-image {
+        width: 100%;
+        height: auto;
+        /* Maintain aspect ratio */
+        object-fit: cover;
+    }
+
+    /* Sidebar adjustments for mobile */
+    .sidebar {
+        width: 100%;
+        padding: 10px;
+        margin-top: 10px;
+    }
+
+    /*NAV LINK STACKED VERTICALLY FOR MOBILE, OM MAN VILL*/
+    /*.nav-links ul {
+        flex-direction: column;
+        gap: 10px;
+    } */
 }
 
-/* Stack everything vertically */
-.content-grid {
-    grid-template-columns: 1fr;
-    /* Full width for main content */
-    padding: 5px;
-    /* Less padding for smaller devices */
-    overflow: hidden;
-    /* Prevent overflow causing horizontal scrolling */
-}
+/* ---------------------------------TABLET STYLES (768px - 1024px)--------------------------------- */
+@media (max-width: 1024px) {
 
-.grid-header {
-    display: grid;
-    grid-template-columns: auto 1fr auto;
-    align-items: center;
-    padding: 15px;
-    /* Ensure there’s enough space for the larger header */
+    /* Stack content vertically */
+    .content-grid {
+        grid-template-columns: 1fr;
+        /* Single column layout */
+        padding: 10px;
+        /* Adjust padding for smaller screens */
+    }
 
-    text-align: center;
-}
+    /* Header adjustments */
+    .header-title h1 {
+        display: flex;
+        justify-items: center;
+        font-size: 3rem;
+        /* Smaller font size for mobile */
+    }
 
-/* Header title */
-.header-title h1 {
-    font-size: 4rem;
-    /* Increase the font size */
-    text-align: center;
-    justify-self: center;
-}
 
-/* Navbar (navigation links) scaling */
-.nav-links ul {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    /* More space between links */
-}
+    /* Adjust main article padding */
+    .main-article {
+        padding: 20px;
+        /* Smaller padding for tablet */
+    }
 
-.nav-links a {
-    font-size: 1.5rem;
-    /* Increase the size of the nav links */
-    color: black;
-    text-decoration: none;
-}
 
-/* Smaller padding for mobile */
-.main-article {
-    padding: 10px;
-    width: 100%;
-    box-sizing: border-box;
-    overflow: hidden;
-}
+    .cropped-article-image {
+        display: flex;
+        width: 400px;
+        /* Set the desired width */
+        height: 250px;
+        /* Set the desired height */
+        object-fit: cover;
+        /* Cover the entire area and crop */
+        justify-self: flex-start;
+        /* Center the image */
+    }
 
-.quote {
-    padding: 20px;
-}
-
-h1 {
-    padding: 20px;
-}
-
-.sidebar {
-    width: 100%;
-    padding: 10px;
-    margin-top: 10px;
+    /* Sidebar adjustments */
+    .sidebar {
+        padding: 15px;
+        margin-top: 20px;
+        /* Space it out below the main content */
+    }
 }
