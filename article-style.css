@@ -127,6 +127,7 @@ a {
     flex-direction: column;
     background-color: #f7f7f7;
     padding: 30px;
+    text-align: left;
 }
 
 .article-topline {

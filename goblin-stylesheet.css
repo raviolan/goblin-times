@@ -117,7 +117,6 @@ a {
 .content-grid {
     display: grid;
     grid-template-columns: 2fr 1fr;
-    /*2 columns for main article and 1 for sidebar. */
     gap: 20px;
     padding: 20px;
 }
@@ -125,14 +124,17 @@ a {
 /* ---------------------------------CONTENT------------------------------------------------*/
 /*wrapper for main articles*/
 .articles-wrapper {
-    grid-column: 1/2;
+    grid-column: 1;
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
 .main-article {
-
+    grid-column: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
     background-color: #f7f7f7;
     padding: 30px;
 }
@@ -168,7 +170,7 @@ a {
 /* Article image styling */
 .article-image {
     place-self: center;
-    width: 80%;
+    width: 100%;
     /* Full width */
     height: auto;
     /* Maintain aspect ratio */
@@ -258,21 +260,48 @@ a {
     /* Center the image */
 }
 
+
+
+.sidospar {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 15px;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.sidospar img {
+    display: flex;
+    width: 70px;
+    margin-right: 10px;
+    height: 70px;
+    /* Set the desired height */
+
+
+}
+
+
+.sidospar li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
 /* ---------------------------------SIDEBAR-------------------------------------------*/
 .sidebar {
     background-color: #f7f7f7;
     /* Color for the sidebar */
-    padding: 20px;
     position: sticky;
     /* Fix position on the page */
     align-self: flex-start;
     top: 120px;
     /* Adjust based on header height */
     left: 120px;
+    padding: 20px;
 }
 
-.sidebar h1,
-h2 {
+
+.sidebar h2 {
     font-family: 'Newsreader', serif;
 }
 
@@ -286,12 +315,14 @@ h2 {
     /* Space between items */
 }
 
+
 .sidebar a {
     font-family: 'Newsreader', serif;
     text-decoration: none;
     color: black;
     /* Change color for sidebar links */
 }
+
 
 .related-story-item {
     display: flex;
@@ -300,9 +331,17 @@ h2 {
 }
 
 .related-story-item img {
-    width: 20%;
+    display: flex;
+    width: 70px;
     margin-right: 10px;
+    height: 70px;
+    /* Set the desired height */
+    object-fit: cover;
+    /* Cover the entire area and crop */
+    justify-self: flex-start;
+    /* Center the image */
 }
+
 
 .related-story-item li {
     list-style: none;
@@ -314,9 +353,9 @@ h2 {
     display: block;
     width: 70%;
     margin: 20px auto;
-    image-orientation: from-image;
 }
 
+/*----------------------------footer-------------------------------*/
 .footer {
     background-color: #7a7979;
 
