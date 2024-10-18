@@ -139,7 +139,6 @@ a {
     flex-direction: column;
     background-color: #f7f7f7;
     margin-right: 0;
-    margin-bottom: 0;
     padding: 20px;
 }
 
@@ -201,10 +200,12 @@ h2 {
 
 .h1 {
     font-size: 50px;
+    padding-bottom: 10px;
 }
 
 .h2 {
     font-size: 34px;
+    padding-bottom: 10px;
 }
 
 .main-article a {
@@ -240,7 +241,8 @@ a h1:hover {
 }
 
 .divider-ad-broad img {
-    width: 100%;
+    width: relative;
+    max-height: 300px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -376,16 +378,22 @@ a {
 }
 
 /*----------------------------footer-------------------------------*/
+.grid-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
 .footer {
     background-color: lightgray;
     display: flex;
     align-items: center;
     justify-content: center;
     padding-top: 30px;
+    flex-direction: column;
 }
-
-
-
 
 /* Center the title between logo and nav */
 .footer-title {
@@ -404,6 +412,26 @@ a {
     color: black;
 
 }
+
+.secret-potion {
+    display: flex;
+    /* Make .secret-potion a flex container */
+    justify-content: center;
+    /* Center the image horizontally */
+    align-items: center;
+    /* Center the image vertically */
+
+
+}
+
+.secret-potion img {
+    display: block;
+    max-width: 40px;
+    height: auto;
+    padding-bottom: 20px;
+}
+
+
 
 /* ---------------------------------RESPONSIVE DESIGN-------------------------------------------*/
 

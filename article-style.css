@@ -54,7 +54,6 @@ body {
 .header-title h1,
 a {
     font-family: 'Chomsky';
-
     margin: 0;
     /* Font smoothing */
     text-decoration: none;
@@ -201,6 +200,7 @@ h2 {
 .divider-ad-skinny {
     grid-column: 1/2;
     width: auto;
+    padding: -10px;
 }
 
 .las-ocksa h2,
@@ -223,7 +223,7 @@ a {
 .many-photos {
     display: flex;
     flex-direction: row;
-    flex -wrap: wrap;
+    flex-wrap: wrap;
     /* Allows images to wrap if the container is too small */
     justify-content: space-evenly;
     gap: 10px;
