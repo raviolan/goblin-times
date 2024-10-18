@@ -50,7 +50,7 @@ body {
 
 }
 
-/* Use the Newsreader font for the header title */
+/* Use the timesreader font for the header title */
 .header-title h1,
 a {
     font-family: 'Chomsky';
@@ -145,7 +145,7 @@ a {
 }
 
 .article-tags {
-    font-family: Newsreader;
+    font-family: timesreader;
 }
 
 .article-bottomline {
@@ -168,8 +168,8 @@ a {
 /* Article text styling*/
 h1,
 h2 {
-    font-family: 'Newsreader', serif;
-    /*Use Newsreader font for all Hs*/
+    font-family: 'timesreader', serif;
+    /*Use timesreader font for all Hs*/
 }
 
 .h1 {
@@ -205,7 +205,7 @@ h2 {
 
 .las-ocksa h2,
 a {
-    font-family: 'Newsreader', serif;
+    font-family: 'timesreader', serif;
 
 }
 
@@ -234,7 +234,7 @@ a {
 }
 
 .sidebar h2 {
-    font-family: 'Newsreader', serif;
+    font-family: 'timesreader', serif;
 }
 
 .sidebar ul {
@@ -249,7 +249,7 @@ a {
 
 
 .sidebar a {
-    font-family: 'Newsreader', serif;
+    font-family: 'timesreader', serif;
     text-decoration: none;
     color: black;
     /* Change color for sidebar links */

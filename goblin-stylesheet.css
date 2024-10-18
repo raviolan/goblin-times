@@ -155,7 +155,7 @@ a {
 
 .article-tags-container {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     color: #7a7979;
 }
 
