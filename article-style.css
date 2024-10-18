@@ -140,7 +140,7 @@ a {
 
 .article-tags-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     color: #7a7979;
 }
 
