@@ -50,7 +50,7 @@ body {
 
 }
 
-/* Use the timesreader font for the header title */
+/* Use the Newsreader font for the header title */
 .header-title h1,
 a {
     font-family: 'Chomsky';
@@ -140,12 +140,12 @@ a {
 
 .article-tags-container {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     color: #7a7979;
 }
 
 .article-tags {
-    font-family: timesreader;
+    font-family: Newsreader;
 }
 
 .article-bottomline {
@@ -168,8 +168,8 @@ a {
 /* Article text styling*/
 h1,
 h2 {
-    font-family: 'timesreader', serif;
-    /*Use timesreader font for all Hs*/
+    font-family: 'Newsreader', serif;
+    /*Use Newsreader font for all Hs*/
 }
 
 .h1 {
@@ -205,7 +205,7 @@ h2 {
 
 .las-ocksa h2,
 a {
-    font-family: 'timesreader', serif;
+    font-family: 'Newsreader', serif;
 
 }
 
@@ -218,6 +218,32 @@ a {
     /* Cover the entire area and crop */
     justify-self: flex-start;
     /* Center the image */
+}
+
+.many-photos {
+    display: flex;
+    flex-direction: row;
+    flex -wrap: wrap;
+    /* Allows images to wrap if the container is too small */
+    justify-content: space-evenly;
+    gap: 10px;
+    /* Optional: Adds spacing between the images */
+    padding: 10px;
+}
+
+.many-photos img {
+    width: 150px;
+    /* Set a fixed width to ensure all images are the same size */
+    height: auto;
+    /* Keeps the aspect ratio */
+}
+
+.faktaruta {
+    display: flex;
+    flex-direction: column;
+    background-color: #ddc2c2;
+    padding: 30px;
+    text-align: left;
 }
 
 /* ---------------------------------SIDEBAR-------------------------------------------*/
@@ -234,7 +260,7 @@ a {
 }
 
 .sidebar h2 {
-    font-family: 'timesreader', serif;
+    font-family: 'Newsreader', serif;
 }
 
 .sidebar ul {
@@ -249,7 +275,7 @@ a {
 
 
 .sidebar a {
-    font-family: 'timesreader', serif;
+    font-family: 'Newsreader', serif;
     text-decoration: none;
     color: black;
     /* Change color for sidebar links */

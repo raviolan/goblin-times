@@ -295,6 +295,13 @@ a {
     font-style: italic;
 }
 
+.many-photos img {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+}
+
 
 /* ---------------------------------SIDEBAR-------------------------------------------*/
 .sidebar {
